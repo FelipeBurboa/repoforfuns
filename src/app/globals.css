@@ -52,14 +52,6 @@
   --font-barlow: var(--font-barlow);
 }
 
-/* Reset and base */
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-}
-
 html {
   scroll-behavior: smooth;
 }
