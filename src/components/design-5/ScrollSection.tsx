@@ -41,8 +41,12 @@ export function ScrollSection({ frames }: ScrollSectionProps) {
                 }}
               >
                 {/* Card with left border accent */}
-                <div className="border-l-[3px] border-[#02a080] pl-4 lg:pl-6">
-                  <span className="font-[var(--font-barlow-condensed)] text-[#02a080] text-sm font-bold uppercase tracking-[0.2em]">
+                <div className={`border-l-[3px] pl-4 lg:pl-6 ${
+                  phase.number === 2 ? "border-[#7236be]" : phase.number === 4 ? "border-[#8c00ff]" : "border-[#02a080]"
+                }`}>
+                  <span className={`font-[var(--font-barlow-condensed)] text-sm font-bold uppercase tracking-[0.2em] ${
+                    phase.number === 2 ? "text-[#7236be]" : phase.number === 4 ? "text-[#8c00ff]" : "text-[#02a080]"
+                  }`}>
                     Paso {phase.number.toString().padStart(2, "0")}
                   </span>
                   <h3 className="font-[var(--font-barlow-condensed)] text-[#1a1a1a] text-4xl lg:text-5xl font-bold uppercase tracking-tight mt-2">
@@ -53,8 +57,8 @@ export function ScrollSection({ frames }: ScrollSectionProps) {
                   </p>
                   {/* Geometric accent below description */}
                   <div className="flex gap-1 mt-4">
-                    <div className="w-6 h-[2px] bg-[#02a080]" />
-                    <div className="w-3 h-[2px] bg-[#ffe529]" />
+                    <div className={`w-6 h-[2px] ${phase.number === 2 ? "bg-[#7236be]" : phase.number === 4 ? "bg-[#8c00ff]" : "bg-[#02a080]"}`} />
+                    <div className={`w-3 h-[2px] ${phase.number === 2 || phase.number === 4 ? "bg-[#cc87ff]" : "bg-[#ffe529]"}`} />
                   </div>
                 </div>
               </div>

@@ -61,8 +61,8 @@ export function Features() {
                 <ul className="flex flex-col gap-3">
                   {section.items.map((item, j) => (
                     <li key={j} className="flex items-start gap-3">
-                      {/* Square bullet — sharp, turquesa */}
-                      <span className="w-[6px] h-[6px] bg-[#02a080] mt-[7px] flex-shrink-0" />
+                      {/* Square bullet — alternating turquesa/violeta */}
+                      <span className={`w-[6px] h-[6px] mt-[7px] flex-shrink-0 ${j % 2 === 0 ? "bg-[#02a080]" : "bg-[#7236be]"}`} />
                       <span className="font-[var(--font-barlow)] text-[#1a1a1a] text-[15px] font-medium">
                         {item}
                       </span>
@@ -71,12 +71,18 @@ export function Features() {
                 </ul>
               </div>
 
-              {/* Amarillo-100 benefit highlight block */}
+              {/* Benefit highlight block — alternating amarillo / violeta-10 */}
               <div className="col-span-12 md:col-span-4">
-                <div className="bg-[#ffe529] p-6 h-full flex items-center relative">
+                <div className={`p-6 h-full flex items-center relative ${
+                  i % 2 === 0 ? "bg-[#ffe529]" : "bg-[#7236be]"
+                }`}>
                   {/* Small geometric corner accent */}
-                  <div className="absolute top-0 right-0 w-4 h-4 bg-[#1a1a1a]/10" />
-                  <p className="font-[var(--font-barlow-condensed)] font-bold uppercase tracking-tight text-[#1a1a1a] text-lg leading-snug">
+                  <div className={`absolute top-0 right-0 w-4 h-4 ${
+                    i % 2 === 0 ? "bg-[#1a1a1a]/10" : "bg-white/25"
+                  }`} />
+                  <p className={`font-[var(--font-barlow-condensed)] font-bold uppercase tracking-tight text-lg leading-snug ${
+                    i % 2 === 0 ? "text-[#1a1a1a]" : "text-white"
+                  }`}>
                     {section.benefit}
                   </p>
                 </div>

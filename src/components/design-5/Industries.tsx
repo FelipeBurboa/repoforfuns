@@ -44,11 +44,15 @@ export function Industries() {
               }}
               className="relative p-6 md:p-8 border-b border-r border-[#1a1a1a]/8 group hover:bg-[#1a1a1a]/[0.02] transition-colors duration-150"
             >
-              {/* Turquesa accent line — top-left */}
-              <div className="absolute top-0 left-0 w-12 h-[3px] bg-[#02a080] group-hover:w-full transition-all duration-300" />
+              {/* Accent line — alternating turquesa/violeta */}
+              <div className={`absolute top-0 left-0 w-12 h-[3px] group-hover:w-full transition-all duration-300 ${
+                i % 2 === 0 ? "bg-[#02a080]" : "bg-[#7236be]"
+              }`} />
 
               {/* Number */}
-              <span className="font-[var(--font-barlow-condensed)] text-[#02a080] text-[11px] font-bold uppercase tracking-[0.2em]">
+              <span className={`font-[var(--font-barlow-condensed)] text-[11px] font-bold uppercase tracking-[0.2em] ${
+                i % 2 === 0 ? "text-[#02a080]" : "text-[#7236be]"
+              }`}>
                 {(i + 1).toString().padStart(2, "0")}
               </span>
 

@@ -117,10 +117,10 @@ export function Pricing() {
           transition={{ duration: 0.3, ease: [0.25, 0.1, 0.25, 1] }}
           className="mt-16"
         >
-          <div className="border-t-4 border-[#ffe529] pt-8">
+          <div className="border-t-4 border-[#8c00ff] pt-8">
             <div className="flex items-center gap-3 mb-8">
-              <div className="w-6 h-6 bg-[#ffe529] flex items-center justify-center">
-                <Sparkles size={14} className="text-[#1a1a1a]" />
+              <div className="w-6 h-6 bg-[#8c00ff] flex items-center justify-center">
+                <Sparkles size={14} className="text-white" />
               </div>
               <h3 className="font-[var(--font-barlow-condensed)] font-bold uppercase tracking-tight text-[#1a1a1a] text-2xl md:text-3xl">
                 {PRICING.addons.headline}
@@ -131,16 +131,16 @@ export function Pricing() {
               {PRICING.addons.items.map((addon, i) => (
                 <div
                   key={i}
-                  className="p-6 md:p-8 border-r border-b border-[#1a1a1a]/8 hover:bg-[#ffe529]/5 transition-colors duration-150"
+                  className="p-6 md:p-8 border-r border-b border-[#1a1a1a]/8 hover:bg-[#f4e6ff]/40 transition-colors duration-150"
                 >
                   <h4 className="font-[var(--font-barlow-condensed)] font-bold uppercase tracking-tight text-[#1a1a1a] text-xl mb-2">
                     {addon.name}
                   </h4>
-                  <p className="font-[var(--font-barlow-condensed)] font-bold text-[#02a080] text-2xl tracking-tight">
+                  <p className="font-[var(--font-barlow-condensed)] font-bold text-[#7236be] text-2xl tracking-tight">
                     {addon.price}
                   </p>
                   <p className="font-[var(--font-barlow)] text-[#1a1a1a]/35 text-[13px] mt-1">
-                    {addon.annualPrice} — <span className="text-[#02a080]">{addon.savings}</span>
+                    {addon.annualPrice} — <span className="text-[#7236be]">{addon.savings}</span>
                   </p>
                   <div className="w-full h-[1px] bg-[#1a1a1a]/8 my-4" />
                   <p className="font-[var(--font-barlow)] text-[#1a1a1a]/55 text-sm leading-relaxed">

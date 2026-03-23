@@ -46,11 +46,15 @@ export function ValueProps() {
                   ease: [0.25, 0.1, 0.25, 1],
                   delay: i * 0.08,
                 }}
-                className="border-t-4 border-[#02a080] bg-white p-6 md:p-8 group hover:bg-[#1a1a1a] transition-colors duration-200"
+                className={`border-t-4 bg-white p-6 md:p-8 group hover:bg-[#1a1a1a] transition-colors duration-200 ${
+                  i === 1 ? "border-[#7236be]" : "border-[#02a080]"
+                }`}
               >
                 {/* Geometric icon block */}
-                <div className="w-12 h-12 bg-[#02a080]/8 group-hover:bg-[#02a080]/20 flex items-center justify-center mb-6 transition-colors duration-200">
-                  <Icon size={22} className="text-[#02a080]" strokeWidth={2} />
+                <div className={`w-12 h-12 flex items-center justify-center mb-6 transition-colors duration-200 ${
+                  i === 1 ? "bg-[#7236be]/8 group-hover:bg-[#7236be]/20" : "bg-[#02a080]/8 group-hover:bg-[#02a080]/20"
+                }`}>
+                  <Icon size={22} className={i === 1 ? "text-[#7236be]" : "text-[#02a080]"} strokeWidth={2} />
                 </div>
 
                 <h3 className="font-[var(--font-barlow-condensed)] font-bold uppercase tracking-tight text-[#1a1a1a] group-hover:text-white text-2xl mb-4 transition-colors duration-200">

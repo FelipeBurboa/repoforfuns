@@ -10,8 +10,11 @@ export function Hero() {
       {/* Geometric turquesa accent block — large, bold */}
       <div className="absolute top-20 right-0 w-[140px] md:w-[240px] h-[320px] md:h-[560px] bg-[#02a080]/8" />
       <div className="absolute bottom-0 left-0 w-[100px] md:w-[160px] h-[100px] md:h-[160px] bg-[#ffe529]/15" />
+      {/* Violeta geometric accent block */}
+      <div className="absolute top-[40%] right-[60px] md:right-[100px] w-[80px] md:w-[120px] h-[180px] md:h-[300px] bg-[#7236be]/8 hidden md:block" />
       {/* Small geometric element */}
       <div className="absolute top-32 right-[240px] w-4 h-4 bg-[#02a080] hidden md:block" />
+      <div className="absolute top-48 right-[200px] w-3 h-3 bg-[#7236be] hidden md:block" />
 
       <div className="max-w-[1440px] mx-auto px-4 md:px-8 grid grid-cols-12 gap-4">
         {/* Headline area — 10 of 12 cols */}
@@ -31,7 +34,7 @@ export function Hero() {
 
             {/* GIANT headline — condensed, uppercase, max impact */}
             <h1 className="font-[var(--font-barlow-condensed)] font-bold uppercase tracking-tight text-[#1a1a1a] leading-[0.88] text-[clamp(3rem,10vw,8rem)]">
-              {HERO.headline}
+              <span className="text-[#02a080]">Agenda</span>, <span className="text-[#7236be]">Vende</span> y <span className="text-[#8c00ff]">Cobra</span> por <span className="relative inline-block">WhatsApp<svg className="absolute -bottom-1 left-0 w-full" viewBox="0 0 200 12" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style={{ height: "0.12em" }}><path d="M2 8C30 2 60 12 90 6C120 0 150 10 198 4" stroke="#02a080" strokeWidth="3" strokeLinecap="round" /></svg></span> sin perder leads
             </h1>
           </motion.div>
 
@@ -86,7 +89,7 @@ export function Hero() {
                   <div
                     className="absolute left-0 top-0 w-[3px] h-full"
                     style={{
-                      backgroundColor: i === 0 ? "#02a080" : i === 1 ? "#ffe529" : "#02a080",
+                      backgroundColor: i === 0 ? "#02a080" : i === 1 ? "#ffe529" : "#7236be",
                       opacity: i === 1 ? 1 : 0.6 + i * 0.2,
                     }}
                   />
