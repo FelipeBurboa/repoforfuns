@@ -12,17 +12,17 @@ export function Contact() {
     >
       <div className="max-w-[1440px] mx-auto px-4 md:px-8">
         <div className="grid grid-cols-12 gap-8">
-          {/* Brand column — giant faded condensed name */}
+          {/* Brand column — logo + name */}
           <div className="col-span-12 lg:col-span-4">
-            <motion.h2
+            <motion.div
               initial={{ opacity: 0, y: 16 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-80px" }}
               transition={{ duration: 0.3, ease: [0.25, 0.1, 0.25, 1] }}
-              className="font-[var(--font-barlow-condensed)] font-bold uppercase tracking-tighter text-[#1a1a1a]/[0.04] text-[clamp(4rem,12vw,9rem)] leading-none select-none"
             >
-              VENTAPLAY
-            </motion.h2>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/ventaplay-logo-login.svg" alt="Ventaplay" className="w-[200px] md:w-[240px] h-auto" />
+            </motion.div>
           </div>
 
           {/* Navigation column */}

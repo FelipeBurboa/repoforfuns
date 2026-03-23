@@ -17,8 +17,9 @@ export function Navbar() {
             href="#"
             className="font-[var(--font-barlow-condensed)] text-[#1a1a1a] text-xl font-bold uppercase tracking-[0.08em] inline-flex items-center gap-2"
           >
-            <span className="w-3 h-3 bg-[#02a080] inline-block" />
-            VENTAPLAY
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/ventaplay-logo-iso.svg" alt="" className="h-5 w-auto" />
+            <span><span className="text-[#8c00ff]">VENTA</span><span className="text-[#00c6a3]">PLAY</span></span>
           </a>
         </div>
 

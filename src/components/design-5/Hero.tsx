@@ -34,7 +34,7 @@ export function Hero() {
 
             {/* GIANT headline — condensed, uppercase, max impact */}
             <h1 className="font-[var(--font-barlow-condensed)] font-bold uppercase tracking-tight text-[#1a1a1a] leading-[0.88] text-[clamp(3rem,10vw,8rem)]">
-              <span className="text-[#02a080]">Agenda</span>, <span className="text-[#7236be]">Vende</span> y <span className="text-[#8c00ff]">Cobra</span> por <span className="relative inline-block">WhatsApp<svg className="absolute -bottom-1 left-0 w-full" viewBox="0 0 200 12" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style={{ height: "0.12em" }}><path d="M2 8C30 2 60 12 90 6C120 0 150 10 198 4" stroke="#02a080" strokeWidth="3" strokeLinecap="round" /></svg></span> sin perder leads
+              <span className="text-[#02a080]">Agenda</span>{" "}<span className="text-[#7236be]">Vende</span> y <span className="text-[#8c00ff]">Cobra</span> por <span className="relative inline-block">WhatsApp<svg className="absolute -bottom-1 left-0 w-full" viewBox="0 0 200 12" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style={{ height: "0.12em" }}><path d="M2 8C30 2 60 12 90 6C120 0 150 10 198 4" stroke="#02a080" strokeWidth="3" strokeLinecap="round" /></svg></span> sin perder leads
             </h1>
           </motion.div>
 
