@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import { motion } from "motion/react";
-import { HERO, WHATSAPP_LINK } from "@/lib/content";
+import { HERO } from "@/lib/content";
 import { ArrowRight } from "lucide-react";
 
 function AnimatedCounter({ value, label }: { value: string; label: string }) {

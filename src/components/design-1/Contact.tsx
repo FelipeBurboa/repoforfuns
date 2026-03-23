@@ -1,6 +1,6 @@
 "use client";
 
-import { CONTACT, WHATSAPP_LINK } from "@/lib/content";
+import { CONTACT } from "@/lib/content";
 import { Mail, MessageCircle, Phone } from "lucide-react";
 
 export function Contact() {

@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState, useCallback } from "react";
+import { useEffect, useState, useCallback } from "react";
 import { FRAME_CONFIG, SCROLL_PHASES } from "@/lib/content";
 
 interface ScrollAnimationState {
@@ -15,9 +15,6 @@ export function useScrollAnimation(containerRef: React.RefObject<HTMLDivElement 
     frameIndex: 0,
     activePhase: null,
   });
-
-  const stateRef = useRef(state);
-  stateRef.current = state;
 
   const updateScroll = useCallback(() => {
     const container = containerRef.current;
@@ -43,13 +40,15 @@ export function useScrollAnimation(containerRef: React.RefObject<HTMLDivElement 
       }
     }
 
-    const prev = stateRef.current;
-    if (
-      prev.frameIndex !== frameIndex ||
-      prev.activePhase !== activePhase
-    ) {
-      setState({ progress, frameIndex, activePhase });
-    }
+    setState((prev) => {
+      if (
+        prev.frameIndex !== frameIndex ||
+        prev.activePhase !== activePhase
+      ) {
+        return { progress, frameIndex, activePhase };
+      }
+      return prev;
+    });
   }, [containerRef]);
 
   useEffect(() => {

@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "motion/react";
-import { HERO, WHATSAPP_LINK } from "@/lib/content";
+import { HERO } from "@/lib/content";
 import { ArrowRight } from "lucide-react";
 
 export function Hero() {

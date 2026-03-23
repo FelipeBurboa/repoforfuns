@@ -1,7 +1,6 @@
 "use client";
 
 import { ScrollAnimation } from "@/components/shared/ScrollAnimation";
-import { SCROLL_PHASES } from "@/lib/content";
 
 interface ScrollSectionProps {
   frames: HTMLImageElement[];

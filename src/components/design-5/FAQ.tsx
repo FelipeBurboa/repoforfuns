@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "motion/react";
-import { FAQ as FAQData, WHATSAPP_LINK } from "@/lib/content";
+import { FAQ as FAQData } from "@/lib/content";
 import {
   Accordion,
   AccordionContent,

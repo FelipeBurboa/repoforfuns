@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "motion/react";
-import { PRICING, WHATSAPP_LINK } from "@/lib/content";
+import { PRICING } from "@/lib/content";
 import { Check, Sparkles } from "lucide-react";
 
 export function Pricing() {

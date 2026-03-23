@@ -2,7 +2,7 @@
 
 import { motion } from "motion/react";
 import { PRICING, WHATSAPP_LINK } from "@/lib/content";
-import { Check, Sparkles, ArrowRight } from "lucide-react";
+import { Check, Sparkles } from "lucide-react";
 
 export function Pricing() {
   return (

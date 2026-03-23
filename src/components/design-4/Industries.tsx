@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "motion/react";
-import { INDUSTRIES, WHATSAPP_LINK } from "@/lib/content";
+import { INDUSTRIES } from "@/lib/content";
 import {
   Heart,
   Scissors,
